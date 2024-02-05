@@ -1,0 +1,153 @@
+/* GLOBAL RESTS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  background-color: hsl(275, 100%, 97%);
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+/* Accordion Parent Container */
+
+.container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+/* Accordion Card */
+
+.card {
+  background-color: #fff;
+  padding: 3rem 2.4rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+  width: 62rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.card-header__text {
+  font-size: 3rem;
+  color: hsl(292, 42%, 14%);
+  font-weight: 700;
+}
+
+.card-accordions {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-accordion {
+  position: relative;
+  border-radius: 0.8rem;
+  box-shadow: 0 4.8rem 12rem rgba(0, 0, 0, 0.05);
+  padding: 3rem;
+}
+
+.accordion {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.accordion-title {
+  color: hsl(292, 42%, 14%);
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 700;
+  width: min(90%, 41em);
+}
+
+.accordion-title:hover,
+.accordion-title:active {
+  color: #9b35ca;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.accordion-icon {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.accordion-modal {
+  color: #747478;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Helper class */
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media queries to make the design adapt to different screen sizes */
+
+/* Responding to tablets (675px) */
+
+@media (max-width: 42em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* Responding to smaller tablets (608px)*/
+
+@media (max-width: 38em) {
+  .card {
+    width: 50rem;
+  }
+
+  .accordion-title {
+    font-size: 2rem;
+  }
+}
+
+/* Responding to mobile-L (496px) */
+
+@media (max-width: 31em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* Responding to mobile-S (432px) */
+
+@media (max-width: 27em) {
+  .card {
+    width: 42rem;
+  }
+}
