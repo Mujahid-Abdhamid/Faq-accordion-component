@@ -1,4 +1,4 @@
-/* GLOBAL RESTS */
+/* GLOBAL RESETS */
 
 * {
   margin: 0;
@@ -104,6 +104,8 @@ body {
 .hidden {
   display: none;
 }
+
+/* Attribution */
 
 .attribution {
   font-size: 1.6rem;
