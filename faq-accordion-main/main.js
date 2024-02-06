@@ -3,6 +3,7 @@
 const btnOpenModal = document.querySelectorAll(".open");
 const btnCloseModal = document.querySelectorAll(".close");
 const modals = document.querySelectorAll(".accordion-modal");
+const accordionCard = document.querySelector(".card");
 
 // Hide the close btn by default
 btnCloseModal.forEach((close) => {
@@ -29,6 +30,8 @@ btnOpenModal.forEach((open, index) => {
     const currentModal = modals[index];
     currentModal.classList.remove("hidden");
     currentModal.style.maxHeight = currentModal.scrollHeight + "px";
+
+    accordionCard.style.marginTop = "5rem";
   });
 });
 
