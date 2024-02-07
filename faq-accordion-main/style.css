@@ -15,10 +15,6 @@ body {
   font-weight: 400;
   line-height: 1;
   background-color: hsl(275, 100%, 97%);
-  background-image: url(./assets/images/background-pattern-desktop.svg);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
 }
 
 /* Accordion Parent Container */
@@ -28,6 +24,10 @@ body {
   place-items: center;
   margin: auto 0;
   min-height: 100vh;
+
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 /* Accordion Card */
